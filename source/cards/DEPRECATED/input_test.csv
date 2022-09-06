@@ -1,0 +1,3 @@
+Qty, name, type_icon, descriptor, text, artwork, info
+1, Sword of the Warlord, hand.svg, Item - Weapon, Hello :test_icon_hello:, croc-sword.svg, relevant info 1/2
+2, Helm of the Centurion, brutal-helm.svg, Item - Armor Helmet, World! :test_icon_world:, centurion-helmet.svg, relevant info 2/2
