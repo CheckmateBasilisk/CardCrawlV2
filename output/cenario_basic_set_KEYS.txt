@@ -1,0 +1,64 @@
+----------
+[CENARIO C1] Tesouros! –
+
+----------
+[CENARIO C2] Tesouros! –
+
+----------
+[CENARIO C3] Tesouros! –
+
+----------
+[CENARIO C4] Poções Estranhas –
+
+----------
+[CENARIO C5] Muitos Tesouros! –
+
+----------
+[CENARIO C6] Um… Mercador? –
+Aventureiros podem trocar Tesouros por suprimentos e equipamento de aventureiro.
+- comida
+- suprimento aleatório
+----------
+[CENARIO C7] Ladrão Espreitando –
+Aventureiros podem trocar Tesouros por suprimentos e equipamento de aventureiro.
+- comida
+- suprimento aleatório
+----------
+[CENARIO C8] O Bardo Viajante –
+Aventureiros podem trocar Tesouros por informações.
+- próximo encontro
+- revelar partes do mapa.
+- dicas?
+Depois de encontrado, o bardo desaparece (e volta para o baralho de encontros)
+----------
+[CENARIO C9] Escombros! –
+
+----------
+[CENARIO C10] Patrulha Inimiga –
+
+----------
+[CENARIO C11] Acampamento Inimigo –
+
+----------
+[CENARIO C12] Combatentes de Elite –
+
+----------
+[CENARIO C13] Inimigos Emboscam –
+
+----------
+[CENARIO C14] O Monstro Errante… –
+Quando O Monstro Errante for encontrado pela primeira vez: os Aventureiros encontram rastros da passagem da criatura. Marcas na parede, cadáveres deixados para trás.
+Quando O Monstro Errante for encontrado pela segunda vez: os Aventureiros ouvem a criatura. O clangor da batalha, os gemidos de suas vítimas.
+Quando O Monstro Errante for encontrado pela terceira vez: os Aventureiros encontram a criatura! Um terrível combate ocorre.
+----------
+[CENARIO C15] Escuridão Opressiva –
+
+----------
+[CENARIO C16] Esperança Reluzente –
+
+----------
+[CENARIO C17] Domínio dos Amaldiçoados –
+
+----------
+[CENARIO C18] A Vingança dos Cruzados –
+

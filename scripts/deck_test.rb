@@ -52,7 +52,7 @@ Squib::Deck.new cards: data['name'].size, layout: 'card_layout.yml', width: 750,
   #exporting
   save_png prefix: 'hello_', dir: $output_dir
   #save_sheet prefix: 'sheet_hello_', dir: $output_dir
-  save_pdf file: 'pdf_hello_', dir: $output_dir
+  save_pdf file: 'pdf_hello_', dir: $output_dir, width: '210mm', height: '297mm'
   
 end
 

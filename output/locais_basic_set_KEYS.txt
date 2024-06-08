@@ -1,0 +1,118 @@
+----------
+[LOCAL L1] Entrada –
+
+----------
+[LOCAL L2] Saguão Antigo –
+Encontro 3 (revele top 3 cartas do Baralho de Cenário. Anexe ou resolva os encontros revelados)
+----------
+[LOCAL L3] Corredor Apertado –
+Revele top 4 cartas do Baralho de Cenário. Resolva o primeiro Encontro do tipo Armadilha revelado.
+----------
+[LOCAL L4] Corredor Apertado –
+Revele top 4 cartas do Baralho de Cenário. Resolva o primeiro Encontro do tipo Tesouro revelado. Se um Tesouro Maior for revelado, ignore-o  e revele um novo Tesouro.
+----------
+[LOCAL L5] Corredor Apertado –
+Revele top 4 cartas do Baralho de Cenário. Resolva o primeiro Encontro do tipo Combate revelado.
+----------
+[LOCAL L6] Sala Esquecida –
+Encontro 2  (revele top 2 cartas do Baralho de Cenário. Anexe ou resolva os encontros revelados)
+----------
+[LOCAL L7] Sala Esquecida –
+Encontro 2  (revele top 2 cartas do Baralho de Cenário. Anexe ou resolva os encontros revelados)
+----------
+[LOCAL L8] Calabouços –
+Emboscada (:finesse:). Encontro Perigoso 3 (revele top 3 cartas do baralho de Cenários. Anexe ou resolva os encontros negativos revelados)
+
+Aventureiros podem vasculhar o lugar (três vezes até esgotarem os lugares em que podem buscar). Quando o fizerem: -1 :time:, revele top 4 cartas do Barallho de Cenários. Resolva o primeiro encontro de Tesouro que não sejam do tipo Maior ou Mágico que for revelado e reembaralhe-o no Baralho de Cenários.
+----------
+[LOCAL L9] Escadas –
+Quando este local for explorado ou revelado, busque no Baralho de Cenários por uma carta “Escadas”. Revele-a e coloque-a em jogo separada do resto do mapa. Esta carta e a revelada estão conectadas.
+Construa um segundo mapa a partir desta nova Escada, contando distância normalmente desde a entrada.
+----------
+[LOCAL L10] Escadas –
+Quando este local for explorado, busque no Baralho de Cenários por uma carta “Escadas”. Revele-a e coloque-a em jogo separada do resto do mapa. Esta carta e a revelada estão conectadas.
+Construa um segundo mapa a partir desta nova Escada, contando distância normalmente desde a entrada.
+----------
+[LOCAL L11] Fonte Solitária –
+Abençoado (:intellect: -1). Refúgio. Efêmero (remova de jogo depois de explorado)
+Procure no Baralho de Cenários por outra carta “Fonte Solitária” e remova-a de jogo.
+Um Aventureiro pode beber da água da fonte: adicione 1 carta “Bênção” em seu Baralho Principal. Ela não pode ser removida por meios não-mágicos e não conta para o total máximo de 15 cartas. Todos os Aventureiros ganham Experiência pela exploração e contato com o desconhecido.
+----------
+[LOCAL L12] Fonte Solitária –
+Amaldiçoado (:intellect: -1). Efêmero (remova de jogo depois de explorado)
+Procure no Baralho de Cenários por outra carta “Fonte Solitária” e remova-a de jogo.
+Um Aventureiro pode beber da água da fonte: adicione 1 carta “Maldição” em seu Baralho Principal.  Ela não pode ser removida por meios não-mágicos e não conta para o total máximo de 15 cartas. Todos os Aventureiros ganham Experiência pela exploração e contato com o desconhecido.
+Quando os Avntureiros fossem deixarem este local, Encontro Perigoso 4 antes.
+----------
+[LOCAL L13] Templo Abandonado –
+Encontro 2
+Quando este local for explorado ou revelado, busque no Baralho de Cenários por uma carta “Templo Abandonado” e remova-a de jogo.
+- Um aventureiro pode Restaurar o Altar: Uma energia ancestral vingativa permeia os Aventureiros e parece os acompanhar. Este local ganha Amaldiçoado. Um dos aventureiros recebe a Condição “Bênção Sinistra”. Quando os Aventureiros fossem encarar um inimigo poderoso, remova “Bênção Sinistra” e todo o dano que os Aventureiros causariam neste turno é mágico :damage_magic:. No final da Aventura, remova “Bênção Solene”   
+- Os aventureiros podem levar embora a estatueta: Este local ganha Amaldiçoado. Aventureiros recebem 1 tesouro “Obra de Arte”.
+----------
+[LOCAL L14] Templo Abandonado –
+Encontro 2.
+Quando este local for explorado ou revelado, busque no Baralho de Cenários por uma carta “Templo Abandonado” e remova-a de jogo.
+- Um aventureiro pode Restaurar o Altar: Se o fizer, uma energia ancestral permeia os Aventureiros e parece os acompanhar. Este local ganha Abençoado. Um dos aventureiros recebe a Condição “Bênção Solene”. Quando um dos Aventureiros fosse receber um Ferimento Crítico, ao invés disso remova “Bênção Solene”, cure todo o dano acumulado naquele jogador e um Ferimento. No final da Aventura, remova “Bênção Solene”
+- Os aventureiros podem levar embora a estatueta: Este local ganha Amaldiçoado. Aventureiros recebem 1 tesouro “Obra de Arte”.
+----------
+[LOCAL L15] Encruzilhada –
+Mágico. Amaldiçoado (:intellect:). Labiríntico (:intellect:). Encontro 1.
+----------
+[LOCAL L16] Altar do Sacrifício –
+Os Aventureiros encontram O Necromante e seus lacaios sombrios.
+“Então foram vocês que invadiram minha cripta e perturbaram meus rituais! Já chega de suas interferências, moscas insignificantes. Lacaios! Peguem-nos e façam deles meus novos escravos sepulcrais!"
+
+Se derrotarrem O Necromante, alguns dos esqueletos se desmontam, enquanto outros abandonam suas armas e caminham, trôpegos, de volta para seus túmulos. Os Aventureiros recebem 5 Tesouros.
+
+Se derrotarem O Necromante antes
+----------
+[LOCAL L17] Grande Porta Trancada –
+Encontro Perigoso 4.
+Para prosseguir, os Aventureiros precisam do item “Chave da Sala do Ritual”. Ao avançarem, coloque em jogo o Local “Altar do Sacrifício”.
+----------
+[LOCAL L18] Cripta –
+Encontro 4 (revele top 4 cartas do Baralho de Cenário. Anexe ou resolva os encontros revelados)
+----------
+[LOCAL L19] Laboratório Alquímico –
+Os Aventureiros podem se dividir e vasculhar o laboratório por itens valiosos  (-1 :time:). Cada Aventureiro pode fazer um teste de um dos 4 atributos (Intelecto, Poder, Refinamento, Espírito): 
+- Vasculhar os registros de inventário: Investigação (:intellect:-1).
+      + Sucesso: No livro de registros consta uma “Orbe Obsidiana Anciã”. Seja lá o que for, parece valioso. Em algum lugar, nos armários mais escondidos, você a encontra. (Aventureiros recebem o item “Orbe Obsidiana”)
+     + Falha: Não parece ter restado nada de útil ou valioso no inventário. Contudo, estudar os índices e se familiarizar com o material de pesquisa pode ser informativo (pode gastar -1 :time:. Se o fizer, este Aventureiro recebe 1 Experiência, adquira somente uma carta que tenha um símbolo de Intelecto :intellect:)
+- Escalar uma prateleira alta: Acrobacia (:finesse:-1)
+     + Sucesso: Sobre uma das prateleiras há uma caixa empoeirada. Dentro há componentes mágicos raros, certamente valiosos. (Aventureiros recebem o item “Componentes Mágicos”)
+     + Falha: Você tem dificuldade de escalar e leva um tombo, evidenciando suas habilidades insuficientes de escalada. Talvez treinar um pouco nestas condições de iluminação precárias afie sua confiança em seu corpo. (pode gastar -1 :time:. Se o fizer, este Aventureiro recebe 1 Experiência, adquira somente uma carta que tenha um símbolo de Refinamento :finesse:)
+- Arrombar um armário emperrado (:power:-1)
+     + Sucesso: você destrói as portas, revelando prateleiras contendo vários frascos, poções e tinturas. Duas delas parecem não ter sofrido as intempéries do tempo e possuem rótulos com símbolos esquisitos. (Aventureiros recebem os itens “Tônico Âmbar” e “Tintura Topaz”)
+     + Falha:  os frascos de vidro dentro do armário acabam todos destruídos. Seu conteúdo sibila ao entrar em contato com o chão, lançando vapores sulfúricos no ar. O odor invade suas narinaz e perturba suas percepções, atacando sua mente com memórias terríveis e ilusões de desejos malignos. Cheirar os sais fétidos do cadinho ao lado deve terminar o efeito rapidamente, porém, esta é uma oportunidade de confrontar e dominar alguns de seus pensamentos mais sombrios (pode gastar -1 :time:. Se o fizer, este Aventureiro recebe 1 Experiência, adquira somente uma carta que tenha um símbolo de Poder :power:)
+- Pilhar uma urna empoeirada (:spirit:-1)
+      + Sucesso: uma urna de barro esculpida em formas mórbidas chama sua atenção. Você se aproxima, apesar da aura macabra, e ao abrir, liberta almas aprisionadas e torturadas que o atacam. Sua força de vontade e determinação o mantém seguro até que as formas espectrais se dissipam no ar, levando consigo seu lamúrio mórbido. Dentro do jarro, há um pingente metálico com um rubi pendurado. (Aventureiros recebem o item “Pingente Rubro”)
+      + Falha: uma urna de barro esculpida em formas mórbidas chama sua atenção. Ao se aproximar, lamúrios fúnebres de almas aprisionadas o detém, assolando sua alma. Aproximar-se mais é impossivelmente doloroso. Estar tão próximo do mundo dos mortos é uma boa oportunidade de acender um incenso, meditar, e aprender algo do lamúrio interminável dos condenados, adquira somente uma carta que tenha um símbolo de Intelecto)Espírito :spirit:
+----------
+[LOCAL L20] Câmara de Tortura –
+
+----------
+[LOCAL L21] Biblioteca Antiga –
+Investigação (:intellect:): 
++ Sucesso: “A grande maioria dos livros está empoeirada, exceto pelo livro no púlpito. Trata-se de um tomo bem produzido e na lombada há entalhado um único nome, que você pressupõe ser o autor (ou dono do grimório macabro): Ahriman.”. 
+- Um Aventureiro pode tentar aprender um dos feitiços no tomo: “-1 :time:, um Aventureiro recebe um dos feitiços “Farpas Mortais de Ahriman” ou “Esfera Flamejante de Ahriman”.
+- Os Aventureiros recebem o Tesouro “Grimório Sombrio”
++ Falha: “O livro no púlpito chama a atenção. Trata-se de um tomo bem produzido e na lombada há entalhado “Ahriman”. Uma peça desse tipo pode valer muito no leilão certo…”
+-Os Aventureiros podem levar o livro misterioso embora, mesmo sem ter certeza do seu valor (Tesouro “Livro Misterioso”)
+----------
+[LOCAL L22] Sarcófago de um Cruzado –
+Abençoado (:intellect: ou :spirit: +1 ). Refúgio.
+
+Os Aventureiros podem profanar o sarcófago: “Com esforço, vocês deslizam a tampa do sarcófago, revelando o cadáver do que um dia foi um cruzado. Em suas mãos, há uma espada empoeirada. Ao se aproximarem, sentem uma aura mística poderosa emanando dela. Vocês podem tomá-la para si”. 
++ Os Aventureiros recebem uma Espada Encantada (2). Trata-se de uma arma encantada sedenta por sangue (secretamente amaldiçoada).
++ Os Aventureiros recebem 1 Experiência pelo contato com o fantástico e novo, apesar da ganância. 
++ Este local perde Abençoado e ganha Perigoso 5.
++ Adicione “Vingança dos Cruzados” ao Baralho de Encontros.
+
+Se não tiverem profanado o sarcófago, encontrarem o “Cálice Sagrado” e o devolverem à estatueta: “Uma corrente súbita de vento passa por vocês, gelando suas espinhas e um estalo ecoa pelo calabouço. Ao olharem novamente, a tampa do sarcófago se encontra destruída, revelando os restos mortais do soldado sagrado segurando espada reluzente, intocada pela poeira, mofo e teias de aranha. Um ar de serenidade permeia o lugar e a espada”.
++ Os Aventureiros perderão o Cálice e receberão Espada Encantada (1). Trata-se de uma arma abençoada, especialmente poderosa contra mortos-vivos. 
++ Os Aventureiros recebem 1 Experiência pelo contato com o fantástico e novo.
+----------
+[LOCAL L23] A Sala de Nove Lados –
+Os Aventureiros podem pegar o quebra-cabeça (entregue a eles um Cubo Mágico real e o item A Chave Tesseractiana). Trata-se de um cubo metálico com runas diversas entalhadas que emana poderosas energias místicas. Manipulá-lo parece mover uma centena de engrenagens bem ajustadas e lubrificadas em seu interior. Apesar sua forma evidentemente cúbica, uma inspeção mais cuidadosa revela que o objeto possui sete faces.
++ Quando os jogadores resolverem o quebra-cabeça. O objeto se anima, girando sozinho e rasgando o tecido da realidade, transportando os Jogadores para um encontro letal com A Prole Estelar e seus Pólipos.

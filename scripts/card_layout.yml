@@ -55,6 +55,10 @@ artwork_square_center:
     width: 450
     x: += 130
 
+artwork_short:
+    extends: artwork
+    height: -= 70
+
 artwork_large:
     extends: artwork
     height: += 330
@@ -76,10 +80,15 @@ name:
   align: center
   font: 'Alegreya SC, Medium'
 
+name_long:
+  extends: name
+  height: += 70
+
 tier:
   extends: label
-  x: += 640
-  width: 70
+  x: += 620
+  width: 90
+  height: 90
   align: center
   font_size: 10
   #font: 'Chuck Noon Regular'
@@ -87,36 +96,63 @@ tier:
 type_icon:
   extends: tier
 
+set_icon:
+  extends: type_icon
+  y: += 90
+
+additional_icons_right_1:
+  extends: set_icon
+  y: += 90
+
 descriptor:
   extends: label
   y: += 520
   font_size: 10
-  font: 'Alegreya, Medium'
+  #font: 'Alegreya, Medium'
+  font: 'Crimson Text'
 
 descriptor_top:
   extends: descriptor
   y: -= 450
 
+descriptor_top_longer_name:
+  extends: descriptor_top
+  y: += 70
+
 descriptor_bottom:
   extends: descriptor
   y: += 330
+
+descriptor_long_text:
+  extends: descriptor
+  y: -= 70
 
 text:
   extends: label
   y: += 600
   height: 330
   font_size: 8
-  font: 'Alegreya, Regular'
+  #font: 'Alegreya, Regular'
+  font: 'Crimson Text'
 
 text_full:
   extends: text
   height: += 450
   y: -= 450
 
+text_full_longer_name:
+  extends: text_full
+  y: += 70
+  height: -= 70
 
 text_short:
   extends: text
   height: -= 70
+
+text_long:
+  extends: text
+  height: += 70
+  y: -= 70
 
 value:
   extends: label
@@ -133,7 +169,8 @@ info:
   extends: label
   height: -= 20
   y: += 950
-  font: 'Alegreya, Italic'
+  #font: 'Alegreya, Italic'
+  font: 'Crimson Text'
   font_size: 6
 
 back_logo:

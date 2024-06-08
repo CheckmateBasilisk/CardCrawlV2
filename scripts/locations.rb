@@ -6,7 +6,7 @@ $iconography = $artwork + 'icons/'
 $output_dir = '../output/'
 
 #input_filenames = ['forest_adventure_basic_set.xlsx']
-input_filenames = ['_testing.xlsx']
+input_filenames = ['locais_basic_set.xlsx']
 #input_filenames = ['blank_test_cards.xlsx']
 input_filenames.map! {|file| "#{$source}cards/#{file}"}
 print '>>>',input_filenames
@@ -31,12 +31,13 @@ input_filenames.each do |filename|
     # artwork
     # preppending file locations to each entry
     data['artwork'].map! {|i| "#{$artwork}#{i}"} 
-    png file: data['artwork'], layout: 'artwork', width: :scale
+    png file: data['artwork'], layout: 'artwork_short', width: :scale
     #svg file: data['artwork'], layout: 'artwork', width: :scale
     # card name
     text str: data['name'], layout: 'name'
     # card icon, uses iconography to make the xmlx easier
     rect layout: 'type_icon'
+    # FIXME : mudar a localização do ícone de tipo para todas as cartas??
     text(str: data['type_icon'], layout: 'type_icon') do |embed|
       embed.svg key: 'head', file: $iconography+'pointy-hat.svg', layout: 'type_icon'
       embed.svg key: 'hand1', file: $iconography+'gloves(1).svg', layout: 'type_icon'
@@ -59,19 +60,56 @@ input_filenames.each do |filename|
       embed.svg key: 'dm', file: $iconography+'rule-book.svg', layout: 'type_icon'
       embed.svg key: 'player', file: $iconography+'rolling-dices.svg', layout: 'type_icon'
       embed.svg key: 'location', file: $iconography+'castle.svg', layout: 'type_icon'
-
     end
+
+    # set icon    
+    rect layout: 'set_icon'
+    # FIXME: change the way sets are named in .xlsx
+    # data['set'].map! {|i| "#{$iconography}/sets/#{i}.svg"} 
+    data['set'].map! {|i| "#{$iconography}/sets/#{i}"} 
+    svg file: data['set'], layout: 'set_icon'
+    #rect layout: 'additional_icons_right_1'
+
+    # directions icon
+    # FIXME iconography doesnt stack imgs on top of eachother so I need to stack .svgs
+    # converting NSEW to arrow-north.svg and so on ??
+=begin
+    data['directions'].each do |d|
+      d.each_char do |c|
+        puts "#{c}.svg"
+        if
+      end
+    end
+=end
+    rect layout: 'additional_icons_right_1'
+    # FIXME: idgaf at this time.
+    # preppending file locations to each entry
+    data['directions'].map! {|i| "#{$iconography}/directions/#{i}.svg"} 
+    svg file: data['directions'], layout: 'additional_icons_right_1'
+    #rect layout: 'set_icon'
+
+    
+
     # type and subtype
     # building descriptor using type -- subtype
     descriptor = data['type'].map.with_index {|t, idx| "#{t} - #{data['subtype'][idx]}"}
-    text str: descriptor, layout: 'descriptor'
-    # description text with embedded icons
-    # joining flavor text with rules
+    text str: descriptor, layout: 'descriptor_long_text'
+    # joining key and rules
+    # FIXME: maybe it is convenient to use an index like the card count in the info instead of a row in the .xlms
+    # data['text'].map!.with_index {|t, idx| if data['key'] <=> "" then "<b>[Local L#{data['key'][idx]}]</b> – #{t}"  else "LALILULELO"  end }
+    #data['text'].map!.with_index {|t, idx| "<b>[Local L#{data['key'][idx]}]</b> – #{t}"}
+    data['text'].map!.with_index {|t, idx| "<b>[Local L#{idx+1}]</b> – #{t}" }
+    # joining flavor text and rules
     data['text'].map!.with_index {|t, idx| "#{t}\n\n<i>#{data['flavor'][idx]}</i>"}
-    text(str: data['text'], layout: 'text', markup: true) do |embed|
+
+    # description text with embedded icons
+    text(str: data['text'], layout: 'text_long', markup: true) do |embed|
       #embed.svg key: ':ataque:', file: $iconography+'sabers-choc.svg', layout: 'icon_text'
       embed.svg key: ':damage:', file: $iconography+'spinning-sword.svg', layout: 'icon_text'
+      embed.svg key: ':damage_magic:', file: $iconography+'lightning-helix-tiny.svg', layout: 'icon_text'
       embed.svg key: ':defense:', file: $iconography+'checked-shield.svg', layout: 'icon_text'
+      # embed.svg key: ':ward:', file: $iconography+'rosa-shield.svg', layout: 'icon_text'
+      embed.svg key: ':ward:', file: $iconography+'magic-shield.svg', layout: 'icon_text'
       embed.svg key: ':piercing:', file: $iconography+'shield-impact.svg', layout: 'icon_text'
       embed.svg key: ':accuracy:', file: $iconography+'bullseye.svg', layout: 'icon_text'
       embed.svg key: ':dodge:', file: $iconography+'sprint.svg', layout: 'icon_text'
@@ -79,14 +117,21 @@ input_filenames.each do |filename|
       embed.svg key: ':range:', file: $iconography+'thrust-bend.svg', layout: 'icon_text'
       embed.svg key: ':tap:', file: $iconography+'rapidshare-arrow.svg', layout: 'icon_text'
       embed.svg key: ':threshold:', file: $iconography+'drop.svg', layout: 'icon_text'
-      embed.svg key: ':finesse:', file: $iconography+'card-play.svg', layout: 'type_icon'
-      embed.svg key: ':intellect:', file: $iconography+'book-cover.svg', layout: 'type_icon'
-      embed.svg key: ':spirit:', file: $iconography+'holy-grail.svg', layout: 'type_icon'
-       embed.svg key: ':might:', file: $iconography+'death-juice.svg', layout: 'type_icon'
-      # embed.svg key: ':combat:', file: $iconography+'sabers-choc.svg', layout: 'icon_text_large'
-      # embed.svg key: ':sorcery:', file: $iconography+'heraldic-sun.svg', layout: 'icon_text_large'
-      embed.svg key: ':combat:', file: $iconography+'sabers-choc.svg', layout: 'icon_text'
-      embed.svg key: ':sorcery:', file: $iconography+'heraldic-sun.svg', layout: 'icon_text'
+      embed.svg key: ':finesse_large:', file: $iconography+'card-play.svg', layout: 'type_icon'
+      embed.svg key: ':intellect_large:', file: $iconography+'book-cover.svg', layout: 'type_icon'
+      embed.svg key: ':spirit_large:', file: $iconography+'holy-grail.svg', layout: 'type_icon'
+      embed.svg key: ':might_large:', file: $iconography+'death-juice.svg', layout: 'type_icon'
+      embed.svg key: ':finesse:', file: $iconography+'card-play-tiny.svg', layout: 'icon_text'
+      embed.svg key: ':intellect:', file: $iconography+'book-cover-tiny.svg', layout: 'icon_text'
+      embed.svg key: ':spirit:', file: $iconography+'holy-grail.svg', layout: 'icon_text'
+      embed.svg key: ':might:', file: $iconography+'death-juice.svg', layout: 'icon_text'
+      embed.svg key: ':combat_large:', file: $iconography+'sabers-choc.svg', layout: 'icon_text_large'
+      embed.svg key: ':sorcery_large:', file: $iconography+'heraldic-sun.svg', layout: 'icon_text_large'
+      embed.svg key: ':tactics_large:', file: $iconography+'black-flag.svg', layout: 'icon_text_large'
+      embed.svg key: ':combat:', file: $iconography+'sabers-choc-tiny.svg', layout: 'icon_text'
+      embed.svg key: ':sorcery:', file: $iconography+'heraldic-sun-tiny.svg', layout: 'icon_text'
+      embed.svg key: ':tactics:', file: $iconography+'black-flag-tiny.svg', layout: 'icon_text'
+      embed.svg key: ':time:', file: $iconography+'sands-of-time.svg', layout: 'icon_text'
 
       embed.svg key: ':[:', file: $iconography+'key_frame_left.svg', layout: 'icon_text_large', width: :scale
       embed.svg key: ':]:', file: $iconography+'key_frame_right.svg', layout: 'icon_text_large', width: :scale
@@ -101,7 +146,18 @@ input_filenames.each do |filename|
     #exporting
     #save_png prefix: File.basename(filename, 'xlsx'), dir: $output_dir
     #save_sheet prefix: File.basename(filename, 'xlsx'), dir: $output_dir 
-    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir
+    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir, width: '210mm', height: '297mm'
+
+    # exporting the keys to <filename>_location_keys.md
+    # formatting text
+    data['text_hidden'].map!.with_index {|t, idx| "----------\n[LOCAL L#{idx+1}] #{data['name'][idx]} –\n#{t}" }
+    # TODO: this might be prettier. Consider doing this later?
+    #d = data['name'].zip data['text_hidden']
+    # actually writing. Will overwrite!
+    # FIXME: THIS WILL PRODUCE A NEW KEYS FILE FOR EVERY INPUT FILE. IS THIS WHAT I WANT?
+    open($output_dir + "#{File.basename(filename, '.xlsx')}_KEYS.txt", 'w') do |file|
+      data['text_hidden'].each { |t| file << "#{t}\n"}
+    end
   end
 
 end

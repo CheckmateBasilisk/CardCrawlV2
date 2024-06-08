@@ -80,7 +80,7 @@ input_filenames.each do |filename|
     #exporting
     #save_png prefix: File.basename(filename, 'xlsx'), dir: $output_dir
     #save_sheet prefix: File.basename(filename, 'xlsx'), dir: $output_dir 
-    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir
+    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir, width: '210mm', height: '297mm'
   end
 
 end

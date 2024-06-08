@@ -48,7 +48,7 @@ input_filenames.each do |filename|
       embed.svg key: 'necklace', file: $iconography+'trinket.svg', layout: 'type_icon'
       embed.svg key: 'treasure', file: $iconography+'swap-bag.svg', layout: 'type_icon'
       embed.svg key: 'misc', file: $iconography+'jeweled-chalice.svg', layout: 'type_icon'
-      embed.svg key: 'sorcery', file: $iconography+'pentacle.svg', layout: 'type_icon'
+      embed.svg key: 'spell', file: $iconography+'pentacle.svg', layout: 'type_icon'
 
     end
     # type and subtype
@@ -78,7 +78,7 @@ input_filenames.each do |filename|
     #exporting
     #save_png prefix: File.basename(filename, 'xlsx'), dir: $output_dir
     #save_sheet prefix: File.basename(filename, 'xlsx'), dir: $output_dir 
-    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir
+    save_pdf file: "#{File.basename(filename, '.xlsx')}.pdf", dir: $output_dir, width: '210mm', height: '297mm'
   end
 
 end
